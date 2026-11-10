@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Afterimage Assembly</title>
+<meta name="description" content="Afterimage Assembly is an independent label for music that lingers: works designed not for immediate impact, but for resonance over time.">
+<link rel="canonical" href="https://afterimageassembly.com/">
+<meta property="og:title" content="Afterimage Assembly">
+<meta property="og:description" content="An independent label for music that lingers.">
+<meta property="og:url" content="https://afterimageassembly.com/">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://f4.bcbits.com/img/a1719373976_10.jpg">
+<meta name="theme-color" content="#0d0f14">
+<style>
+  :root {
+    --bg: #0d0f14;
+    --bg-2: #141823;
+    --ink: #e6e3dc;
+    --muted: #9a9ca6;
+    --faint: #5c606c;
+    --accent: #b9c7e0;
+    --line: rgba(230, 227, 220, 0.12);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--bg);
+    background-image:
+      radial-gradient(ellipse 80% 50% at 20% 0%, rgba(120, 140, 190, 0.14), transparent 70%),
+      radial-gradient(ellipse 60% 40% at 90% 30%, rgba(190, 150, 170, 0.08), transparent 70%);
+    background-attachment: fixed;
+    color: var(--ink);
+    font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+    font-size: 18px;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: inherit; }
+  .wrap { max-width: 1040px; margin: 0 auto; padding: 0 24px; }
+
+  header { padding: 18vh 0 12vh; }
+  .mark {
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase;
+    color: var(--muted);
+  }
+  h1 {
+    font-weight: 400;
+    font-size: clamp(40px, 8vw, 84px);
+    line-height: 1.05;
+    letter-spacing: -0.01em;
+    margin: 18px 0 0;
+    text-shadow: 0 0 40px rgba(185, 199, 224, 0.25);
+  }
+  h1 span { display: block; color: var(--muted); opacity: 0.55; }
+
+  .statement { max-width: 36em; padding-bottom: 12vh; }
+  .statement p + p { margin-top: 1.1em; }
+  .statement .lead { font-size: clamp(20px, 2.6vw, 26px); line-height: 1.55; }
+  .statement .lead em { color: var(--accent); font-style: italic; }
+  .statement .sub { color: var(--muted); }
+
+  h2 {
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-weight: 500;
+    font-size: 12px; letter-spacing: 0.32em; text-transform: uppercase;
+    color: var(--muted);
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 32px;
+  }
+
+  .releases {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 40px 28px;
+  }
+  .releases a { text-decoration: none; display: block; }
+  .cover {
+    aspect-ratio: 1;
+    background: var(--bg-2);
+    overflow: hidden;
+    box-shadow: 0 20px 50px -20px rgba(0, 0, 0, 0.7);
+  }
+  .cover img {
+    width: 100%; height: 100%; object-fit: cover; display: block;
+    filter: saturate(0.9);
+    transition: transform 1.2s ease, filter 1.2s ease, opacity 1.2s ease;
+    opacity: 0.92;
+  }
+  .releases a:hover .cover img,
+  .releases a:focus-visible .cover img { transform: scale(1.03); filter: saturate(1.05); opacity: 1; }
+  .releases a:focus-visible { outline: 1px solid var(--accent); outline-offset: 6px; }
+  .title { margin-top: 14px; font-size: 17px; line-height: 1.4; }
+
+  section.listen { padding: 14vh 0 10vh; }
+  .links { list-style: none; display: grid; gap: 0; }
+  .links a {
+    display: flex; justify-content: space-between; align-items: baseline; gap: 16px;
+    padding: 22px 0;
+    border-bottom: 1px solid var(--line);
+    text-decoration: none;
+    font-size: clamp(20px, 3vw, 28px);
+    transition: color 0.6s ease, padding 0.6s ease;
+  }
+  .links a small {
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-size: 13px; color: var(--muted); letter-spacing: 0.04em; text-align: right;
+  }
+  .links a:hover, .links a:focus-visible { color: var(--accent); padding-left: 8px; outline: none; }
+
+  footer {
+    padding: 6vh 0 10vh;
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-size: 13px; color: var(--faint);
+  }
+
+  @media (max-width: 560px) {
+    body { font-size: 17px; }
+    .wrap { padding: 0 16px; }
+    header { padding: 14vh 0 8vh; }
+    .releases { grid-template-columns: repeat(2, 1fr); gap: 28px 16px; }
+    .title { font-size: 15px; }
+    .links a { flex-direction: column; gap: 4px; }
+    .links a small { text-align: left; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; scroll-behavior: auto !important; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="mark">Independent Label</div>
+    <h1>Afterimage<span>Assembly</span></h1>
+  </header>
+
+  <section class="statement" aria-label="About">
+    <p class="lead">Afterimage Assembly is Jonathan Kendall's independent label, for <em>music that lingers</em>: works designed not for immediate impact, but for resonance over time.</p>
+    <p class="sub">Albums are treated as complete forms, with sequencing and atmosphere given as much weight as individual tracks.</p>
+  </section>
+
+  <section aria-labelledby="releases-h">
+    <h2 id="releases-h">Releases</h2>
+    <ul class="releases">
+      <li><a href="https://jonathankendall.bandcamp.com/album/fluorescent-fields-of-future">
+        <div class="cover"><img src="https://f4.bcbits.com/img/a1719373976_10.jpg" alt="Cover art for Fluorescent Fields of Future" loading="lazy" width="1200" height="1200"></div>
+        <div class="title">Fluorescent Fields of Future</div>
+      </a></li>
+      <li><a href="https://jonathankendall.bandcamp.com/album/falling-in-love">
+        <div class="cover"><img src="https://f4.bcbits.com/img/a3958497165_10.jpg" alt="Cover art for Falling In Love" loading="lazy" width="1200" height="1200"></div>
+        <div class="title">Falling In Love</div>
+      </a></li>
+      <li><a href="https://jonathankendall.bandcamp.com/album/infinite-recursions-a-fractal-odyssey">
+        <div class="cover"><img src="https://f4.bcbits.com/img/a0089251022_10.jpg" alt="Cover art for Infinite Recursions: A Fractal Odyssey" loading="lazy" width="1200" height="1200"></div>
+        <div class="title">Infinite Recursions: A Fractal Odyssey</div>
+      </a></li>
+      <li><a href="https://jonathankendall.bandcamp.com/album/skyline-city-gardens">
+        <div class="cover"><img src="https://f4.bcbits.com/img/a2355064020_10.jpg" alt="Cover art for Skyline City Gardens" loading="lazy" width="1200" height="1200"></div>
+        <div class="title">Skyline City Gardens</div>
+      </a></li>
+      <li><a href="https://jonathankendall.bandcamp.com/album/theorem-of-the-thaumaturge">
+        <div class="cover"><img src="https://f4.bcbits.com/img/a1988920739_10.jpg" alt="Cover art for Theorem of the Thaumaturge" loading="lazy" width="1200" height="1200"></div>
+        <div class="title">Theorem of the Thaumaturge</div>
+      </a></li>
+      <li><a href="https://jonathankendall.bandcamp.com/album/vacations-vol-1-for-deep-electronic-people">
+        <div class="cover"><img src="https://f4.bcbits.com/img/a3313120081_10.jpg" alt="Cover art for Vacations Vol 1 for Deep Electronic People" loading="lazy" width="1200" height="1200"></div>
+        <div class="title">Vacations Vol 1 for Deep Electronic People</div>
+      </a></li>
+      <li><a href="https://jonathankendall.bandcamp.com/album/vacations-vol-2-for-deep-electronic-people">
+        <div class="cover"><img src="https://f4.bcbits.com/img/a3859108741_10.jpg" alt="Cover art for Vacations Vol 2 for Deep Electronic People" loading="lazy" width="1200" height="1200"></div>
+        <div class="title">Vacations Vol 2 for Deep Electronic People</div>
+      </a></li>
+      <li><a href="https://jonathankendall.bandcamp.com/album/atlas-of-understanding">
+        <div class="cover"><img src="https://f4.bcbits.com/img/a1891194440_10.jpg" alt="Cover art for Atlas of Understanding" loading="lazy" width="1200" height="1200"></div>
+        <div class="title">Atlas of Understanding</div>
+      </a></li>
+    </ul>
+  </section>
+
+  <section class="listen" aria-labelledby="listen-h">
+    <h2 id="listen-h">Listen &amp; Explore</h2>
+    <ul class="links">
+      <li><a href="https://jonathankendall.bandcamp.com">All releases on Bandcamp <small>jonathankendall.bandcamp.com</small></a></li>
+      <li><a href="https://onojk123.com/radio/">Radio <small>onojk123.com/radio</small></a></li>
+      <li><a href="https://www.jonathankendallart.com/music/">Artist page <small>Jonathan Kendall · Music</small></a></li>
+    </ul>
+  </section>
+
+  <footer>
+    &copy; <span id="y">2026</span> Afterimage Assembly
+  </footer>
+
+</div>
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
